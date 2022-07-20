@@ -36,7 +36,7 @@
 
           .topnav a.active {
             background-color: #d6dec8;
-            color: white;
+            color: #212021;
           }
 
           .topnav .icon {
@@ -47,40 +47,21 @@
               padding:0;
               box-sizing:border-box
             }
-            .prof_description {
-              width:100%;
+            .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 300px;
             }
-            .image {
-              height:0;
-              padding-bottom:40%;
-              background-repeat:no-repeat;
-              background-size:cover;
-              background-position:center center;
-              position:relative;
-              width:40%;
+            figcaption {
+            color: #212021;
+            font-style: italic;
+            padding: 2px;
+            text-align: center;
+            font-size: 13px;
             }
-            .desc, .image {
-              float:left;
-              display:block
-            }
-            .desc {
-              width:60%;
-              text-align: justify;
-              padding:20px;
-            }
-            @media (max-width:600px) {
-            .desc{
-              float:none;
-              width:100%;
-              text-align:center;
-            }
-            .image {
-              float:none;
-              width:100%;
-              max-width: 100%;
-              height: 500px;
-            }
-          }
           @media screen and (max-width: 600px) {
             .topnav a:not(:first-child) {display: none;}
             .topnav a.icon {
@@ -116,30 +97,22 @@
       <i class="fa fa-bars"></i>
     </a>
   </div>
-
-  <div style="padding:10%;">
-    <div class="item_description">
-      <div class="image"
-            style="background-image:url('assets/images/profile_img.png');border-radius: 8px;">
-      </div>
-      <div class="desc">
-        <p>
-          <h1 style="text-align: left;">Wonjong "Peter" Lee</h1>
-          <h2 style="font-size: 15px;">
-            My name is Peter Lee (Korean: 이원종), a rising second-year computer engineering student at the University of Illinois Urbana Champaign.</br></br>
-            I am currently working as an undergraduate researcher / research assistant at Professor Levchenko's cybersecurity research group.
-          </h2>
-          <div style="text-align:center">
-          <a href="https://github.com/wonjongbot" style="text-decoration: none; font-size:22px; color:black;padding:5px;"target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
-          <a href="https://twitter.com/wonjongbot" style="text-decoration: none; font-size:22px; color:black;padding:5px;"target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/in/wonjongbot/" style="text-decoration: none; font-size:22px; color:black;padding:5px;"target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
-          <a href="mailto:wonjong3@illinois.edu" style="text-decoration: none; font-size:22px; color:black;padding:5px;"target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a>
-          </div>
-          </p>
-      </div>
+  <div>
+    <div>
+    <img src='assets/images/profile_img.png' style="border-radius: 35%;"class="center">
+    <figcaption>Jenny took this picture of me 🦭</figcaption>
     </div>
-  </div>
-
+    <h2 style="font-size: 18px; padding: 0 25%; margin: 30px 0px 60px; text-align: center;">
+    My name is Peter Lee (Korean: 이원종), a rising second-year computer engineering student at the University of Illinois Urbana-Champaign.</br></br>
+    I am currently working as an undergraduate researcher / research assistant at Professor Levchenko's cybersecurity research group.
+    </h2>
+    <p style="text-align:center;">
+        <a href="https://github.com/wonjongbot" style="text-decoration: none; font-size:22px; color:black;padding:7px;"target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+        <a href="https://twitter.com/wonjongbot" style="text-decoration: none; font-size:22px; color:black;padding:7px;"target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/wonjongbot/" style="text-decoration: none; font-size:22px; color:black;padding:7px;"target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+        <a href="mailto:wonjong3@illinois.edu" style="text-decoration: none; font-size:22px; color:black;padding:7px;"target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a>
+    </p>
+</div>
   <script>
   function myFunction() {
     var x = document.getElementById("myTopnav");
