@@ -87,11 +87,22 @@
         color: #212021;
       }
       .container {
-        margin: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 20px 60px;
+      }
+      .blogclass{
+        margin: 20px 60px;
+      }
+      @media only screen and (max-width: 800px) {
+        .container {
+          margin: 10px;
+          justify-content: left;
+        }
+        .blogclass{
+          margin: 10px;
+        }
       }
     </style>
   </head>
@@ -113,17 +124,16 @@
       </a>
     </div>
     <div class="container">
-      <div style="max-width: 800px">
+      <div class="blogclass" style="max-width: 800px">
         <h1
           style="
             font-size: 25px;
-            margin: 20px 60px;
             border-bottom: 2px dotted #212021;
           "
         >
           Blog Index
         </h1>
-        <div style="margin: 20px 60px">
+        <div style="margin: 20px 20px">
           <h2 style="font-size: 14px; color: #766142; margin-bottom: 5%;">2022</h2>
           <div>
             <h3 style="margin-bottom: 10px">
