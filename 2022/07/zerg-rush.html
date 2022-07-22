@@ -97,6 +97,10 @@
                 color: #212021;
             }
 
+        
+            .sexy {
+                max-width: 600px;
+            }
             .container {
                 margin: 50px;
                 display: flex;
@@ -112,6 +116,15 @@
                 margin-top:auto;
                 margin-bottom: 10px;
                 width: 60%;
+            }
+            @media only screen and (max-width: 600px) {
+                .container {
+                margin: 10px;
+                justify-content: left;
+                }
+                .sexy{
+                    max-width: 400px;
+                }
             }
         </style>
     </head>
@@ -137,7 +150,7 @@
             </a>
         </div>
         <div class="container">
-            <div style="max-width: 800px">
+            <div style="max-width: 600px">
                 <h1
                     style="
                         font-size: 25px;
@@ -151,7 +164,9 @@
                         Thursday, July 12, 2022
                     </p>
                 </h1>
-                <zero-md src="test.md"></zero-md>
+                <div class="sexy" >
+                <zero-md src="https://raw.githubusercontent.com/microsoft/TypeScript/main/README.md"></zero-md>
+                </div>
             </div>
         </div>
         <script>
