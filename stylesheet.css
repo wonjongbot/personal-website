@@ -2,8 +2,8 @@
 body {
   height: 100vh;
   cursor: none;
-  background: #fff;
-  color: #000;
+  background: white;
+  color: black;
 }
 body .cursor {
   pointer-events: none;
