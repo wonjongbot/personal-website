@@ -7,6 +7,7 @@ body {
 }
 body .cursor {
   pointer-events: none;
+  z-index: 1000;
 }
 body .cursor__ball {
   /* position: fixed; */
@@ -14,6 +15,7 @@ body .cursor__ball {
   left: 0;
   mix-blend-mode: difference;
   z-index: 1000;
+  position: relative;
 }
 body .cursor__ball circle {
   fill: #f7f8fa;
@@ -123,7 +125,7 @@ papertitle {
 
 name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .one {
