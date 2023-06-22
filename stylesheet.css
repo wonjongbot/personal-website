@@ -3,7 +3,7 @@ body {
   height: 100vh;
   cursor: none;
   background: #fff;
-  color: #212021;
+  color: #000;
 }
 body .cursor {
   pointer-events: none;
